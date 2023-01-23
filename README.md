@@ -56,7 +56,7 @@ receive the whole topology.
 
 In order to send a map (the topology), I serialized it in the following format:
 
-$<TOPOLOGY> ::= <CLUSTER>|<CLUSTER><DELIM><TOPOLOGY>$
+$\<TOPOLOGY\> ::= <CLUSTER>|<CLUSTER><DELIM><TOPOLOGY>$
 $<CLUSTER>\ ::=\ <COORDINATOR><FOLLOWERS>$
 $<COORDINATOR>\ ::=\ unsigned\ int$
 $<FOLLOWERS>\ ::=\ (unsigned\ int)^*$
