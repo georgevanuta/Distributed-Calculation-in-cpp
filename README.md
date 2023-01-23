@@ -56,12 +56,13 @@ receive the whole topology.
 
 In order to send a map (the topology), I serialized it in the following format:
 
-$\<TOPOLOGY\> ::= <CLUSTER>|<CLUSTER><DELIM><TOPOLOGY>$
+```CFG
+$<TOPOLOGY>\ ::=\ <CLUSTER>|<CLUSTER><DELIM><TOPOLOGY>$
 $<CLUSTER>\ ::=\ <COORDINATOR><FOLLOWERS>$
 $<COORDINATOR>\ ::=\ unsigned\ int$
 $<FOLLOWERS>\ ::=\ (unsigned\ int)^*$
 $<DELIM>\ ::=\ -1$
-
+```
 ## Distributed Calculation
 
 The calculation works almost the same as the discovery of the topology.
