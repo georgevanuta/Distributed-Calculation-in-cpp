@@ -90,13 +90,13 @@ make;mpirun --np 12 --oversubscribe ./tema3 10000000 1 | grep -e '::::'
 
 - With partition:
 
+![workload_partition](https://user-images.githubusercontent.com/74255152/209938627-376cfe9b-5876-4bd0-8436-c45ed76fbf54.png)
+
 command ran:
 
 ```shell
 make;mpirun --np 12 --oversubscribe ./tema3 10000000 2 | grep -e '::::'
 ```
-
-![workload_partition](https://user-images.githubusercontent.com/74255152/209938627-376cfe9b-5876-4bd0-8436-c45ed76fbf54.png)
 
 ## Bonus
 
