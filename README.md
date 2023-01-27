@@ -103,7 +103,9 @@ make;mpirun --np 12 --oversubscribe ./tema3 10000000 2 | grep -e '::::'
 This implementation handles the partition case by changing who is the last coordinator which will
 send the feedback wave in the discovery of the topology and in the distributed calculation.
 
-In the case of no partition ($ERROR\ =\ 0\ or\ 1$), the last coordinator is 1 and the wave will travel as
+In the case of no partition (
+$ERROR\ =\ 0\ or\ 1$
+), the last coordinator is 1 and the wave will travel as
 follows:
 
 $0\ \rightarrow\ 3\ \rightarrow\ 2\ \rightarrow\ 1$
@@ -112,7 +114,9 @@ and then the feedback wave:
 
 $1\ \rightarrow\ 2\ \rightarrow\ 3\ \rightarrow\ 0$
 
-In the case of a partition ($ERROR\ =\ 2$), the last coordinator is 2 and the wave will travel as follows:
+In the case of a partition (
+$ERROR\ =\ 2$
+), the last coordinator is 2 and the wave will travel as follows:
 
 $0\ \rightarrow\ 3\ \rightarrow\ 2$
 
